@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+//Sass plantilla//
+@import './include/variables.scss';
+@import './include/global.scss';
+@import './include/tipografia.scss';
+@import './include/color.scss';
+
+//Sección de cosas del header, aquí está el fondo aesthetik
+#header {
+    background: linear-gradient( rgba(212, 103, 121, 0.7), rgba(26, 25, 25, 0.7)), url("assets/imagenes/pexels-aleksandar-pasaric-2067057.webp");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+
+//reset, para poder coontrolar mejor los espacios de esta cosa 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.showcase-row-image img { //Imagen segunda que está en el header, superpuesta a la ciudad
+    width: 350px;
+    height: 571px;
+    float: right;
+    margin-top: -571px; /* Ajusta el valor según tu preferencia para mover la imagen hacia arriba */
+    margin-right: 240px; /* Ajusta el valor según tu preferencia para mover la imagen hacia la derecha */
+    display: block; /* Hace que la imagen se comporte como un elemento de bloque */
+  }
+
+html,
+body {
+	color: color-gray;
+}
+
+h1 {
+	font-size: 2.0rem;
+}
+
+h2 {
+	font-size: font-size-20;
+	font-weight: 400;
+	text-align: center;
+}
+
+h4 {
+	font-size: font-size-16;
+	font-weight: 400;
+    font-family: $font-raleway;
+}
+
+p {
+	font-size: font-size-16;
+	margin: 10px 0;
+	line-height: 1.9em;
+    font-family: $font-rubik;
+}
+//Utility classes o clases de utilidad pues, que básicamente aplican a todo el desto del desta//
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.large {
+	font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    font-family: $font-libre;
+}
+
+.display-1 { //Hola! Soy ingeniero... 
+	font-size: 6rem;
+	text-transform: uppercase;
+	font-weight: 400;
+    color:#fff;
+    font-family: $font-baloo;
+}
+    .btn { //Boton k manda comentarios va
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+        padding: 12px 23px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border-radius: 4px;
+        &-color {
+            background: $color-primary;
+            color: #fff;
+            border: 1px solid $color-second;
+        }
+}//End button//
+
+form { //esto es para lo de contacto
+	label {
+		display: inline-block;
+		margin-bottom: 6px;
+	}
+	.form-group {
+		margin-bottom: 16px;
+	}
+	.form-control {
+		width: 100%;
+		padding: 7px 12px;
+		line-height: 1.5;
+		background-color: $color-second;
+		border: none;
+		border-radius: 4px;
+	}
+	button {
+		width: 100%;
+	}
+} // Bye form 
+
+//Contacto h2
+#contacto h2 {
+    font-family: $font-libre;
+        font-size: 40px;
+        color: $color-primary;
+		font-weight: bold;
+}
+#enviar{
+	opacity: 0;
+  }
+  
+
+//Header letras del banner 
+#showcase {
+	height: 80vh;
+	padding: 140px 0;
+}
+
+showcase h1 {
+	line-height: 1em;
+}
+
+#showcase .title-outline {
+	color: #fff;
+	-webkit-text-stroke: 3px #000;
+	font-family: 'Bungee', cursive;
+	font-size: 90px;
+}
+.showcase-row {
+	display: flex;
+}
+.showcase-row-title {
+	padding-top: 70px;
+}
+
+//Botón//
+	a{
+		color: var($color-primary);
+	}
+//End showcase
+
+//About
+#about {
+	padding: 70px 0;
+	text-align: center;
+    font-family: $font-raleway;
+    font-size: 20px;
+} //Suficiente about
+
+//Skills//
+#skills {
+	padding: 90px 0;
+}
+
+#skills h2 {
+	padding-bottom: 50px;
+    color: $color-primary;
+    font-family: $font-libre;
+        font-size: 40px;
+		font-weight: bold;
+}
+
+#skills h4{
+	font-weight: bold;
+}
+
+//Animaciones de skills
+.skills-row {
+	display: flex;
+	padding-bottom: 50px;
+}
+
+.skills-row-left,
+.skills-row-right {
+	width: 50%;
+	display: flex;
+}
+
+.skills-row-left-image,
+.skills-row-right-image {
+	width: 50%;
+	text-align: right;
+	padding-right: 50px;
+	border-radius: 5px;
+		transition: 1s;
+
+}
+
+.skills-row-left-image img,
+.skills-row-right-image img {
+	height: 100px;
+	border-radius: 5px;
+}
+
+.skills-row-right-image:hover{
+	transform: scale(1.3);
+	z-index: 2;
+}
+
+.skills-row-left-image:hover{
+	transform: scale(1.3);
+	z-index: 2;
+}
+
+
+//Aquí acaba skills//
+
+//Formación//
+#formacion {
+	padding: 60px 0;
+	background: #fffffff6;
+	flex-direction: column;
+}
+
+#formacion h2 {
+	padding-bottom: 20px;
+    color: $color-primary;
+    font-family: $font-libre;
+        font-size: 40px;
+	font-weight: bold;
+}
+
+.formacion-row {
+	display: flex;
+	padding-bottom: 40px;
+	
+}
+
+.formacion-row-tag {
+	width: 50%;
+	text-align: right;
+	padding-right: 80px;
+}
+
+.formacion-row-tag p span {
+	background: #c4c4c4;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 20px;
+}//aquí acaba formacion//
+
+//proyectos//
+#proyectos {
+	padding: 90px 0;
+	background: #ffffff;
+}
+
+#proyectos h2 {
+	padding-bottom: 50px;
+    color: $color-primary;
+    font-family: $font-libre;
+        font-size: 40px;
+		font-weight: bold;
+}
+
+.portfolio-row {
+	display: flex;
+}
+//ANIMACIÓN PROYECTOS
+.portfolio-row-box { position: relative;}
+
+.portfolio-row-box::before , 
+.portfolio-row-box::after
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+
+.portfolio-row-box::before 
+{
+  transform-origin: left top;
+}
+
+.portfolio-row-box::after
+{
+  transform-origin: right bottom;
+}
+
+.portfolio-row-box:hover::before ,
+.portfolio-row-box:hover::after ,
+.portfolio-row-box:focus::before ,
+.portfolio-row-box:focus::after
+{
+  transform: scale3d(1, 1, 1);
+}
+
+.portfolio-row-box {
+	margin: 20px;
+	background: #fff;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.portfolio-row-box img {
+	width: 100%;
+}
+
+.portfolio-row-box p {
+	text-align: center;
+	padding: 20px;
+	margin-top: 0;
+}
+//FIN DE ROW-BOX Y ANIMACIÓN ROW-BOX
+//Hobbies//
+#titulohobbies{
+	h2 {
+		
+		color: $color-primary;
+        font-family: $font-libre;
+        font-size: 40px;
+		font-weight: bold;
+		margin-top: 50px; 
+    }
+}
+
+#hobbies {
+	padding: 40px 0;
+		position: relative; /* Establece el posicionamiento relativo */
+		 /* Desplaza el elemento hacia la izquierda 20px desde su posición original */
+		 align-content: center;
+
+ h5{
+	font-family: $font-libre;
+ }
+} 
+//HOBBIES ANIMACION
+  
+  #hobbies .card:hover {
+	transform: scale(1.05);
+  }
+
+  #hobbies .card{
+	transition: all 0.3s;
+	border: 2px solid transparent;
+  }
+
+
+//Fin #hobbies
+
+//Inicio footer
+	.footerindex {
+		height: 10vh;
+	}
+	
+	#footer {
+		background: #f8f9fa;
+		text-align: center;
+		padding: 30px;
+		a{
+			padding: 10px;
+		}
+	}
+
+//Animacion de hobbies//
+
+//Inicio de echo de PHP

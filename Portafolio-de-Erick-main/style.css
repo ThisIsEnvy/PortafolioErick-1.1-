@@ -1,0 +1,410 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+/* aquí van las clases globales pues*/
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.font-libre {
+  font-family: "Libre Franklin", cursive;
+}
+
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.color-primary {
+  color: #C41019;
+}
+
+.color-primary-bg {
+  background: #C41019;
+}
+
+.color-second {
+  color: #e9e7e7;
+}
+
+.color-second-bg {
+  background: #C41019;
+}
+
+.color-gray {
+  color: #52141c;
+}
+
+.color-gray-bg {
+  background: #52141c;
+}
+
+#header {
+  background: linear-gradient(rgba(212, 103, 121, 0.7), rgba(26, 25, 25, 0.7)), url("assets/imagenes/pexels-aleksandar-pasaric-2067057.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.showcase-row-image img {
+  width: 350px;
+  height: 571px;
+  float: right;
+  margin-top: -571px; /* Ajusta el valor según tu preferencia para mover la imagen hacia arriba */
+  margin-right: 240px; /* Ajusta el valor según tu preferencia para mover la imagen hacia la derecha */
+  display: block; /* Hace que la imagen se comporte como un elemento de bloque */
+}
+
+html,
+body {
+  color: color-gray;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: font-size-20;
+  font-weight: 400;
+  text-align: center;
+}
+
+h4 {
+  font-size: font-size-16;
+  font-weight: 400;
+  font-family: "Raleway", cursive;
+}
+
+p {
+  font-size: font-size-16;
+  margin: 10px 0;
+  line-height: 1.9em;
+  font-family: "Rubik", cursive;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.large {
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Libre Franklin", cursive;
+}
+
+.display-1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding: 12px 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-color {
+  background: #C41019;
+  color: #fff;
+  border: 1px solid #e9e7e7;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-control {
+  width: 100%;
+  padding: 7px 12px;
+  line-height: 1.5;
+  background-color: #e9e7e7;
+  border: none;
+  border-radius: 4px;
+}
+form button {
+  width: 100%;
+}
+
+#contacto h2 {
+  font-family: "Libre Franklin", cursive;
+  font-size: 40px;
+  color: #C41019;
+  font-weight: bold;
+}
+
+#enviar {
+  opacity: 0;
+}
+
+#showcase {
+  height: 80vh;
+  padding: 140px 0;
+}
+
+showcase h1 {
+  line-height: 1em;
+}
+
+#showcase .title-outline {
+  color: #fff;
+  -webkit-text-stroke: 3px #000;
+  font-family: "Bungee", cursive;
+  font-size: 90px;
+}
+
+.showcase-row {
+  display: flex;
+}
+
+.showcase-row-title {
+  padding-top: 70px;
+}
+
+a {
+  color: var(#C41019);
+}
+
+#about {
+  padding: 70px 0;
+  text-align: center;
+  font-family: "Raleway", cursive;
+  font-size: 20px;
+}
+
+#skills {
+  padding: 90px 0;
+}
+
+#skills h2 {
+  padding-bottom: 50px;
+  color: #C41019;
+  font-family: "Libre Franklin", cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#skills h4 {
+  font-weight: bold;
+}
+
+.skills-row {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.skills-row-left,
+.skills-row-right {
+  width: 50%;
+  display: flex;
+}
+
+.skills-row-left-image,
+.skills-row-right-image {
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.skills-row-left-image img,
+.skills-row-right-image img {
+  height: 100px;
+  border-radius: 5px;
+}
+
+.skills-row-right-image:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+.skills-row-left-image:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+#formacion {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.9647058824);
+  flex-direction: column;
+}
+
+#formacion h2 {
+  padding-bottom: 20px;
+  color: #C41019;
+  font-family: "Libre Franklin", cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.formacion-row {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.formacion-row-tag {
+  width: 50%;
+  text-align: right;
+  padding-right: 80px;
+}
+
+.formacion-row-tag p span {
+  background: #c4c4c4;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 20px;
+}
+
+#proyectos {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+#proyectos h2 {
+  padding-bottom: 50px;
+  color: #C41019;
+  font-family: "Libre Franklin", cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.portfolio-row {
+  display: flex;
+}
+
+.portfolio-row-box {
+  position: relative;
+}
+
+.portfolio-row-box::before,
+.portfolio-row-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+
+.portfolio-row-box::before {
+  transform-origin: left top;
+}
+
+.portfolio-row-box::after {
+  transform-origin: right bottom;
+}
+
+.portfolio-row-box:hover::before,
+.portfolio-row-box:hover::after,
+.portfolio-row-box:focus::before,
+.portfolio-row-box:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.portfolio-row-box {
+  margin: 20px;
+  background: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-row-box img {
+  width: 100%;
+}
+
+.portfolio-row-box p {
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+}
+
+#titulohobbies h2 {
+  color: #C41019;
+  font-family: "Libre Franklin", cursive;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+#hobbies {
+  padding: 40px 0;
+  position: relative; /* Establece el posicionamiento relativo */
+  /* Desplaza el elemento hacia la izquierda 20px desde su posición original */
+  align-content: center;
+}
+#hobbies h5 {
+  font-family: "Libre Franklin", cursive;
+}
+
+#hobbies .card:hover {
+  transform: scale(1.05);
+}
+
+#hobbies .card {
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.footerindex {
+  height: 10vh;
+}
+
+#footer {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 30px;
+}
+#footer a {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

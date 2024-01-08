@@ -1,0 +1,20 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Un portafolio que debería de incluir lo que sé",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./sass/style.scss style.css --watch"
+  },
+  "keywords": [
+    "Aesthetic",
+    "portafolio"
+  ],
+  "author": "EnvyThey (Erick Salvador Medina Villagomez)",
+  "license": "ISC",
+  "dependencies": {
+    "framer": "2.3.0",
+    "motion": "10.16.2"
+  }
+}
